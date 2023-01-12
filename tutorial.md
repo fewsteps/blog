@@ -21,7 +21,7 @@ git push -u origin main`
 # Create gitignore File
 - Go to https://www.toptal.com/developers/gitignore and Type: `VisualStudioCode, Hugo, macOS` => generate file
 - crate a `.gitignore` and paste the code form that site
-
+- add `node_modules/*` on the file on line 27
 
 # Add Themes Blist
 - https://jamstackthemes.dev/theme/hugo-blist/
@@ -36,4 +36,11 @@ git push -u origin main`
 - copy the config file content from blist/example direcory and put it in config. remove unncesssary things like lagnuge et.
 - fix the base url with `https://github.com/fewsteps/blog.git`
 - run `hugo server` to test and go to browser 'http://localhost:1313/fewsteps/justtesting.github.com/' 
-- 
+-
+
+
+Remove `public` folder and add the following lines
+git submodule add -f https://github.com/fewsteps/justtesting.github.com.git public
+
+git submodule add https://github.com/fewsteps/justtesting.github.com.git public
+git submodule add -f https://github.com/fewsteps/justtesting.github.com.git public
