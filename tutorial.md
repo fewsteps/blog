@@ -41,6 +41,12 @@ git push -u origin main`
 
 Remove `public` folder and add the following lines
 git submodule add -f https://github.com/fewsteps/justtesting.github.com.git public
+hugo -t blist
+cd public
+li
+git add .
+git commit -m "initial blog"
+git push
 
 git submodule add https://github.com/fewsteps/justtesting.github.com.git public
 git submodule add -f https://github.com/fewsteps/justtesting.github.com.git public
